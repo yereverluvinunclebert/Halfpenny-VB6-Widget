@@ -1,7 +1,7 @@
 # Halfpenny-Widget-VB6
 The Steampunk Halfpenny Desktop Widget, written in VB6 for Windows and ReactOS. Created for XP, Vista, Win7, 8, 10/11+, ReactOS as well as Linux or the Apple Mac's OS/X with Wine. This Halfpenny Desktop Widget is an attractive and steamy VB6 widget for your desktop. This VB6 widget provides a simple moveable marble globe complete with rings
 
-![europa](https://github.com/yereverluvinunclebert/Europa-VB6-Widget/assets/2788342/b16fcccd-080d-4e58-a735-336507968c5e)
+![halfpenny](https://github.com/yereverluvinunclebert/Halfpenny-VB6-Widget/assets/2788342/cda4d143-21da-4f7f-a661-6d4120a62a51)
 
 The others are the Uranus, Jupiter, Saturn and of course, 'God of War', the planet Mars. 
 Double-clicking on the planet will cause a personalised Windows application 
@@ -37,7 +37,7 @@ Why VB6? Well, with a 64 bit, modern-language improvement upgrade on the way in 
  This version was developed on Windows 7 using 32 bit VisualBasic 6 as a FOSS 
  project creating a WoW64 widget for the desktop.
 
-![help](https://github.com/yereverluvinunclebert/Europa-VB6-Widget/assets/2788342/fce336d8-4cdf-4556-b2a8-1607f0129ba1)
+![help](https://github.com/yereverluvinunclebert/Halfpenny-VB6-Widget/assets/2788342/b6ca9ec3-14ed-45a1-b429-a96e965430cb)
 
  It is open source to allow easy configuration, bug-fixing, enhancement and 
  community contribution towards free-and-useful VB6 utilities that can be created
@@ -46,7 +46,7 @@ Why VB6? Well, with a 64 bit, modern-language improvement upgrade on the way in 
  is new VB6 widgets with more functionality and then hopefully, conversion of 
  each to RADBasic/TwinBasic for future-proofing and 64bit-ness. 
 
-![theWholeShebang](https://github.com/yereverluvinunclebert/Europa-VB6-Widget/assets/2788342/ccb5382e-518e-4a6a-88c6-adc3ed1ac2ee)
+![theWholeShebang](https://github.com/yereverluvinunclebert/Halfpenny-VB6-Widget/assets/2788342/81dbab57-1e3b-4335-8cc7-97db24a49b68)
 
  This utility is one of a set of steampunk and dieselpunk widgets. That you can 
  find here on Deviantart: https://www.deviantart.com/yereverluvinuncleber/gallery
@@ -92,7 +92,8 @@ If you are just a casual user of desktop programs then simply download the SETUP
 	Windows 10 Home 64bit on AMD    
 	Windows 11 64bit on Intel  
 
-![about](https://github.com/yereverluvinunclebert/Europa-VB6-Widget/assets/2788342/365a51a8-febf-417b-a7e6-e6ec9406d991)
+![about](https://github.com/yereverluvinunclebert/Halfpenny-VB6-Widget/assets/2788342/a473e61b-eea4-482e-9609-bf795beb3601)
+
 
  CREDITS:
  
@@ -211,7 +212,7 @@ If you are just a casual user of desktop programs then simply download the SETUP
  With regard to the commercial use of incorporated images, permission and a 
  licence would need to be obtained from the original owner and creator, ie. me.
 
-![desktop](https://github.com/yereverluvinunclebert/Europa-VB6-Widget/assets/2788342/7e9aead3-ade5-4c89-a459-8510762a1502)
+![desktop](https://github.com/yereverluvinunclebert/Halfpenny-VB6-Widget/assets/2788342/c1961137-82cf-45b4-9cc6-cc1d7749f161)
 
 
 
