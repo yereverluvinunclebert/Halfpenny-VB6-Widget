@@ -1,5 +1,5 @@
-# Europa-Widget-VB6
-The Steampunk Europa Desktop Widget, written in VB6 for Windows and ReactOS. Created for XP, Vista, Win7, 8, 10/11+, ReactOS as well as Linux or the Apple Mac's OS/X with Wine. This Europa Desktop Widget is an attractive and steamy VB6 widget for your desktop. This VB6 widget provides a simple moveable marble globe complete with rings
+# Halfpenny-Widget-VB6
+The Steampunk Halfpenny Desktop Widget, written in VB6 for Windows and ReactOS. Created for XP, Vista, Win7, 8, 10/11+, ReactOS as well as Linux or the Apple Mac's OS/X with Wine. This Halfpenny Desktop Widget is an attractive and steamy VB6 widget for your desktop. This VB6 widget provides a simple moveable marble globe complete with rings
 
 ![europa](https://github.com/yereverluvinunclebert/Europa-VB6-Widget/assets/2788342/b16fcccd-080d-4e58-a735-336507968c5e)
 
@@ -18,7 +18,7 @@ Why VB6? Well, with a 64 bit, modern-language improvement upgrade on the way in 
 
 ![orrery-desktop](https://github.com/yereverluvinunclebert/Jupiter-Widget/assets/2788342/38dd8b6c-32ed-4a51-9704-61b2246a9fec)
  
- The Europa widget is an attractive dieselpunk VB6 widget for your desktop. Functional and gorgeous at the same time. The graphics are my own. It is all my code with some help from the chaps at VBForums (credits given). This Widget is a moveable widget that you can move anywhere around the desktop as you require.
+ The Halfpenny widget is an attractive dieselpunk VB6 widget for your desktop. Functional and gorgeous at the same time. The graphics are my own. It is all my code with some help from the chaps at VBForums (credits given). This Widget is a moveable widget that you can move anywhere around the desktop as you require.
 
  This widget can be increased in size, animation speed can be changed, 
  opacity/transparency may be set as to the users discretion. The widget can 
@@ -31,7 +31,7 @@ Why VB6? Well, with a 64 bit, modern-language improvement upgrade on the way in 
  windows. Mouse hover over the widget and press CTRL+mousewheel up/down to resize. It works well on Windows XP 
  to Windows 11.
 
- The Europa VB6 widget is Beta-grade software, under development, not yet 
+ The Halfpenny VB6 widget is Beta-grade software, under development, not yet 
  ready to use on a production system - use at your own risk.
 
  This version was developed on Windows 7 using 32 bit VisualBasic 6 as a FOSS 
@@ -145,9 +145,9 @@ If you are just a casual user of desktop programs then simply download the SETUP
  referenced using modRC6regfree.bas which is compiled into the binary.	
  
  
- Requires a Europa folder in C:\Users\<user>\AppData\Roaming\ 
- eg: C:\Users\<user>\AppData\Roaming\Europa
- Requires a settings.ini file to exist in C:\Users\<user>\AppData\Roaming\Europa
+ Requires a Halfpenny folder in C:\Users\<user>\AppData\Roaming\ 
+ eg: C:\Users\<user>\AppData\Roaming\Halfpenny
+ Requires a settings.ini file to exist in C:\Users\<user>\AppData\Roaming\Halfpenny
  The above will be created automatically by the compiled program when run for the 
  first time.
  
@@ -158,7 +158,7 @@ If you are just a casual user of desktop programs then simply download the SETUP
  * CCRSlider.ocx
  
  This OCX will reside in the program folder. The program reference to this OCX is 
- contained within the supplied resource file Europa.RES. It is 
+ contained within the supplied resource file Halfpenny.RES. It is 
  compiled into the binary.
  
  * OLEGuids.tlb
@@ -182,7 +182,7 @@ If you are just a casual user of desktop programs then simply download the SETUP
  * SETUP.EXE - The program is currently distributed using setup2go, a very useful 
  and comprehensive installer program that builds a .exe installer. Youll have to 
  find a copy of setup2go on the web as it is now abandonware. Contact me
- directly for a copy. The file "install Europa 0.1.0.s2g" is the configuration 
+ directly for a copy. The file "install Halfpenny 0.1.0.s2g" is the configuration 
  file for setup2go. When you build it will report any errors in the build.
  
  * HELP.CHM - the program documentation is built using the NVU HTML editor and 
