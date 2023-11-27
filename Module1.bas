@@ -283,7 +283,7 @@ Private Const VER_PLATFORM_WIN32_NT = 2
 ' general
 Public gblPlStartup As String
 Public gblPlGaugeFunctions As String
-Public gblPlanetSelection As String
+Public gblHalfpennySelection As String
 'Public 'PrWidgetSkew As String
 
 ' config
@@ -1890,7 +1890,7 @@ Public Sub unloadAllForms(ByVal endItAll As Boolean)
     
     ' unload the native VB6 and RC5 forms
     
-    Unload planetPrefs
+    Unload halfpennyPrefs
     Unload helpForm
     Unload frmLicence
     Unload frmTimer
@@ -1901,7 +1901,7 @@ Public Sub unloadAllForms(ByVal endItAll As Boolean)
     
     ' remove all variable references to each form in turn
     
-    Set planetPrefs = Nothing
+    Set halfpennyPrefs = Nothing
     Set helpForm = Nothing
     Set fMain.aboutForm = Nothing
     Set fMain.thingummyForm = Nothing
@@ -1961,29 +1961,29 @@ End Sub
 Public Sub makeProgramPreferencesAvailable()
     On Error GoTo makeProgramPreferencesAvailable_Error
     
-    If planetPrefs.IsVisible = False Then
+    If halfpennyPrefs.IsVisible = False Then
     
-        If planetPrefs.WindowState = vbMinimized Then
-            planetPrefs.WindowState = vbNormal
+        If halfpennyPrefs.WindowState = vbMinimized Then
+            halfpennyPrefs.WindowState = vbNormal
             'Call readPrefsPosition
         End If
                 ' set the current position of the utility according to previously stored positions
 
-        If planetPrefs.WindowState = vbNormal Then
+        If halfpennyPrefs.WindowState = vbNormal Then
         
             Call readPrefsPosition
             
-            If planetPrefs.Left = 0 Then
-                If ((fMain.thingummyForm.Left + fMain.thingummyForm.Width) * screenTwipsPerPixelX) + 200 + planetPrefs.Width > screenWidthTwips Then
-                    planetPrefs.Left = (fMain.thingummyForm.Left * screenTwipsPerPixelX) - (planetPrefs.Width + 200)
+            If halfpennyPrefs.Left = 0 Then
+                If ((fMain.thingummyForm.Left + fMain.thingummyForm.Width) * screenTwipsPerPixelX) + 200 + halfpennyPrefs.Width > screenWidthTwips Then
+                    halfpennyPrefs.Left = (fMain.thingummyForm.Left * screenTwipsPerPixelX) - (halfpennyPrefs.Width + 200)
                 End If
             End If
             
-            If planetPrefs.Left < 0 Then planetPrefs.Left = 0
-            If planetPrefs.Top < 0 Then planetPrefs.Top = 0
+            If halfpennyPrefs.Left < 0 Then halfpennyPrefs.Left = 0
+            If halfpennyPrefs.Top < 0 Then halfpennyPrefs.Top = 0
             
-            planetPrefs.show  ' show it again
-            planetPrefs.SetFocus
+            halfpennyPrefs.show  ' show it again
+            halfpennyPrefs.SetFocus
         End If
     End If
     
@@ -2013,15 +2013,15 @@ Public Sub readPrefsPosition()
 
     ' if a current location not stored then position to the middle of the screen
     If gblPlFormXPosTwips <> "" Then
-        planetPrefs.Left = Val(gblPlFormXPosTwips)
+        halfpennyPrefs.Left = Val(gblPlFormXPosTwips)
     Else
-        planetPrefs.Left = screenWidthTwips / 2 - planetPrefs.Width / 2
+        halfpennyPrefs.Left = screenWidthTwips / 2 - halfpennyPrefs.Width / 2
     End If
 
     If gblPlFormYPosTwips <> "" Then
-        planetPrefs.Top = Val(gblPlFormYPosTwips)
+        halfpennyPrefs.Top = Val(gblPlFormYPosTwips)
     Else
-        planetPrefs.Top = Screen.Height / 2 - planetPrefs.Height / 2
+        halfpennyPrefs.Top = Screen.Height / 2 - halfpennyPrefs.Height / 2
     End If
 
    On Error GoTo 0
@@ -2042,9 +2042,9 @@ Public Sub writePrefsPosition()
         
    On Error GoTo writePrefsPosition_Error
 
-    If planetPrefs.WindowState = vbNormal Then ' when vbMinimised the value = -48000  !
-        gblPlFormXPosTwips = LTrim$(Str$(planetPrefs.Left))
-        gblPlFormYPosTwips = LTrim$(Str$(planetPrefs.Top))
+    If halfpennyPrefs.WindowState = vbNormal Then ' when vbMinimised the value = -48000  !
+        gblPlFormXPosTwips = LTrim$(Str$(halfpennyPrefs.Left))
+        gblPlFormYPosTwips = LTrim$(Str$(halfpennyPrefs.Top))
         
         ' now write those params to the toolSettings.ini
         sPutINISetting softwareThingummy, "formXPos", gblPlFormXPosTwips, gblPlSettingsFile
@@ -2056,7 +2056,7 @@ Public Sub writePrefsPosition()
 
 writePrefsPosition_Error:
 
-    MsgBox "Error " & Err.Number & " (" & Err.Description & ") in procedure writePrefsPosition of Form planetPrefs"
+    MsgBox "Error " & Err.Number & " (" & Err.Description & ") in procedure writePrefsPosition of Form halfpennyPrefs"
 End Sub
 
 

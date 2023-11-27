@@ -289,7 +289,7 @@ Public Sub mainRoutine(ByVal restart As Boolean)
     Call configureTimers
     
     'load the preferences form but don't yet show it, speeds up access to the prefs via the menu
-    Load planetPrefs
+    Load halfpennyPrefs
 
     ' RC message pump will auto-exit when Cairo Forms = 0 so we run it only when 0, this prevents message interruption
     ' when running twice on reload.
@@ -453,7 +453,7 @@ Private Sub addImagesToImageList()
     Cairo.ImageList.AddImage "about", App.Path & "\Resources\images\about.png"
     
     'add Resources to the global ImageList
-    Cairo.ImageList.AddImage "planet", App.Path & "\Resources\images\Halfpenny.png"
+    Cairo.ImageList.AddImage "halfpenny", App.Path & "\Resources\images\Halfpenny.png"
 
    On Error GoTo 0
    Exit Sub
@@ -467,7 +467,7 @@ End Sub
 ' Procedure : adjustMainControls
 ' Author    : beededea
 ' Date      : 27/04/2023
-' Purpose   : called at runtime and on restart, sets the characteristics of the planet and menus
+' Purpose   : called at runtime and on restart, sets the characteristics of the halfpenny and menus
 '---------------------------------------------------------------------------------------
 '
 Public Sub adjustMainControls()
@@ -578,7 +578,7 @@ Public Sub readSettingsFile(ByVal location As String, ByVal gblPlSettingsFile As
         ' general
         gblPlStartup = fGetINISetting(location, "startup", gblPlSettingsFile)
         gblPlGaugeFunctions = fGetINISetting(location, "gaugeFunctions", gblPlSettingsFile)
-        gblPlanetSelection = fGetINISetting(location, "planetSelection", gblPlSettingsFile)
+        gblHalfpennySelection = fGetINISetting(location, "halfpennySelection", gblPlSettingsFile)
         
         ' configuration
         gblPlEnableTooltips = fGetINISetting(location, "enableTooltips", gblPlSettingsFile)
@@ -662,7 +662,7 @@ Public Sub validateInputs()
             
         ' general
         If gblPlGaugeFunctions = vbNullString Then gblPlGaugeFunctions = "1" ' always operate
-        If gblPlanetSelection = vbNullString Then gblPlanetSelection = "0"
+        If gblHalfpennySelection = vbNullString Then gblHalfpennySelection = "0"
         If gblPlStartup = vbNullString Then gblPlStartup = "1"
         
         ' Config
@@ -839,7 +839,7 @@ Private Sub createFormOnCurrentDisplay()
     On Error GoTo createFormOnCurrentDisplay_Error
 
     With New_c.Displays(1) 'get the current Display
-      fMain.InitAndShowAsFreeForm .WorkLeft, .WorkTop, 1000, 1000, "planet Widget"
+      fMain.InitAndShowAsFreeForm .WorkLeft, .WorkTop, 1000, 1000, "halfpenny Widget"
     End With
 
     On Error GoTo 0

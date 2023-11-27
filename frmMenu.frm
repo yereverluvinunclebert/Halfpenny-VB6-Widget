@@ -171,8 +171,8 @@ Private Sub mnuAppFolder_Click()
         execStatus = ShellExecute(Me.hwnd, "open", folderPath, vbNullString, vbNullString, 1)
         If execStatus <= 32 Then MsgBox "Attempt to open folder failed."
     Else
-        MsgBox "Having a bit of a problem opening a folder for this widget - " & folderPath & " It doesn't seem to have a valid working directory set.", "planet Widget Confirmation Message", vbOKOnly + vbExclamation
-        'MessageBox Me.hWnd, "Having a bit of a problem opening a folder for that command - " & sCommand & " It doesn't seem to have a valid working directory set.", "planet Gauge Confirmation Message", vbOKOnly + vbExclamation
+        MsgBox "Having a bit of a problem opening a folder for this widget - " & folderPath & " It doesn't seem to have a valid working directory set.", "halfpenny Widget Confirmation Message", vbOKOnly + vbExclamation
+        'MessageBox Me.hWnd, "Having a bit of a problem opening a folder for that command - " & sCommand & " It doesn't seem to have a valid working directory set.", "halfpenny Gauge Confirmation Message", vbOKOnly + vbExclamation
     End If
 
    On Error GoTo 0
@@ -229,7 +229,7 @@ Private Sub mnuEditWidget_Click()
         If execStatus <= 32 Then MsgBox "Attempt to open the IDE for this widget failed."
     Else
         MsgBox "Having a bit of a problem opening an IDE for this widgt - " & editorPath & " It doesn't seem to have a valid working directory set."
-        'MessageBox Me.hWnd, "Having a bit of a problem opening a folder for that command - " & sCommand & " It doesn't seem to have a valid working directory set.", "planet Widget Confirmation Message", vbOKOnly + vbExclamation
+        'MessageBox Me.hWnd, "Having a bit of a problem opening a folder for that command - " & sCommand & " It doesn't seem to have a valid working directory set.", "halfpenny Widget Confirmation Message", vbOKOnly + vbExclamation
     End If
 
    On Error GoTo 0
@@ -256,7 +256,7 @@ Private Sub mnuHelpHTM_Click()
         If fFExists(App.Path & "\help\Help.chm") Then
             Call ShellExecute(Me.hwnd, "Open", App.Path & "\help\Help.chm", vbNullString, App.Path, 1)
         Else
-            MsgBox ("The help file - planet.html.html- is missing from the help folder.")
+            MsgBox ("The help file - halfpenny.html.html- is missing from the help folder.")
         End If
 
    On Error GoTo 0
@@ -350,12 +350,12 @@ Private Sub mnuLockWidget_Click()
         mnuLockWidget.Checked = False
         gblPlPreventDragging = "0"
         thingummyWidget.Locked = False
-        planetPrefs.chkPreventDragging.Value = 0
+        halfpennyPrefs.chkPreventDragging.Value = 0
     Else
         mnuLockWidget.Checked = True
         thingummyWidget.Locked = 1
         gblPlPreventDragging = "1"
-        planetPrefs.chkPreventDragging.Value = 1
+        halfpennyPrefs.chkPreventDragging.Value = 1
     End If
 
     sPutINISetting softwareThingummy, "preventDragging", gblPlPreventDragging, gblPlSettingsFile

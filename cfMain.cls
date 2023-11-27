@@ -45,8 +45,8 @@ Public Sub InitAndShowAsFreeForm(ByVal X As Long, ByVal Y As Long, Optional ByVa
     ' make the form transparent
     thingummyForm.WidgetRoot.BackColor = -1
 
-    ' create a new planet widget with a name, location and width, runs Class_Initialize
-    Set thingummyWidget = thingummyForm.Widgets.Add(New cwThingummy, "planet widget", 0, 0, 1000, 1000)
+    ' create a new halfpenny widget with a name, location and width, runs Class_Initialize
+    Set thingummyWidget = thingummyForm.Widgets.Add(New cwThingummy, "halfpenny widget", 0, 0, 1000, 1000)
         
     ' I do not 'get' the size/position relationship between the form and the widget on the form. Seems peculiar to me.
       
@@ -63,7 +63,7 @@ Public Sub InitAndShowAsFreeForm(ByVal X As Long, ByVal Y As Long, Optional ByVa
     ' make the about form transparent
     aboutForm.WidgetRoot.BackColor = -1
          
-    ' create a new planet widget with a name and location, first step of that is to run Class_Initialize
+    ' create a new halfpenny widget with a name and location, first step of that is to run Class_Initialize
     Set aboutWidget = aboutForm.Widgets.Add(New cwAbout, "about", 0, 0, 470, 670)
 
    On Error GoTo 0
@@ -181,7 +181,7 @@ End Sub
 ' Procedure : thingummyForm_MouseUp
 ' Author    : beededea
 ' Date      : 05/05/2023
-' Purpose   : save the form x,y position when ever the planet/form is dragged
+' Purpose   : save the form x,y position when ever the halfpenny/form is dragged
 '---------------------------------------------------------------------------------------
 '
 Private Sub thingummyForm_MouseUp(Button As Integer, Shift As Integer, X As Single, Y As Single)
@@ -190,7 +190,7 @@ Private Sub thingummyForm_MouseUp(Button As Integer, Shift As Integer, X As Sing
     If thingummyWidget.Locked = True Then Exit Sub
     
     ' no point in saving when prefs are visible.
-    If planetPrefs.IsVisible = False Then ' checks without activating the form - important!.
+    If halfpennyPrefs.IsVisible = False Then ' checks without activating the form - important!.
        gblPlMaximiseFormX = Str$(thingummyForm.Left) ' saving in pixels
        gblPlMaximiseFormY = Str$(thingummyForm.Top)
        

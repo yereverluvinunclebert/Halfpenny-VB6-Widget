@@ -26,8 +26,8 @@ Private ringxo As Integer
 Private ringyo As Integer
 Private surroundxo As Integer
 Private surroundyo As Integer
-Private planetxo As Integer
-Private planetyo  As Integer
+Private halfpennyxo As Integer
+Private halfpennyyo  As Integer
 
 Private WithEvents W As cWidgetBase
 Attribute W.VB_VarHelpID = -1
@@ -65,13 +65,13 @@ Private Sub Class_Initialize()
     
     mZoom = 0
 
-    planetxo = 15: planetyo = 27
+    halfpennyxo = 15: halfpennyyo = 27
           
     Set W = Cairo.WidgetBase '<- this is required in each cwImplementation...
         W.BorderColor = &H444444
         W.ImplementsWheelMessages = True ' enables gblPlivate Sub W_MouseWheel
              
-        mZoom = 0.1 ' the planet size initially very small
+        mZoom = 0.1 ' the halfpenny size initially very small
         ZoomDirection = mZoomDirection
     
 
@@ -95,7 +95,7 @@ End Sub
 Private Sub initialiseVars() ' set all vars to zero
     On Error GoTo initialiseVars_Error
 
-    planetxo = 0: planetyo = 0
+    halfpennyxo = 0: halfpennyyo = 0
     
     On Error GoTo 0
     Exit Sub
@@ -340,7 +340,7 @@ Private Sub W_MouseWheel(ByVal MouseKeys As Long, ByVal Rotation As Long, ByVal 
         gblPlGaugeSize = LTrim$(Str$(thingummyWidget.Zoom * 100)) ' store the value dynamically
         sPutINISetting softwareThingummy, "gaugeSize", gblPlGaugeSize, gblPlSettingsFile
         
-        If planetPrefs.IsVisible = True Then planetPrefs.sliGaugeSize = Val(gblPlGaugeSize)
+        If halfpennyPrefs.IsVisible = True Then halfpennyPrefs.sliGaugeSize = Val(gblPlGaugeSize)
     End Select
 
    On Error GoTo 0
@@ -414,7 +414,7 @@ Public Sub Draw(ByVal CC As cCairoContext, ByVal dx_Aligned As Single, ByVal dy_
 
     CC.Save
    
-     CC.RenderSurfaceContent "planet", planetxo, planetyo, 570, 570, , mOpacity
+     CC.RenderSurfaceContent "halfpenny", halfpennyxo, halfpennyyo, 570, 570, , mOpacity
     
     CC.Restore
 

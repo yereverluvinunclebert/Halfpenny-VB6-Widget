@@ -1,6 +1,6 @@
 VERSION 5.00
 Object = "{BCE37951-37DF-4D69-A8A3-2CFABEE7B3CC}#1.0#0"; "CCRSlider.ocx"
-Begin VB.Form planetPrefs 
+Begin VB.Form halfpennyPrefs 
    AutoRedraw      =   -1  'True
    Caption         =   "Halfpenny Preferences"
    ClientHeight    =   10650
@@ -1662,14 +1662,14 @@ Begin VB.Form planetPrefs
       End
    End
 End
-Attribute VB_Name = "planetPrefs"
+Attribute VB_Name = "halfpennyPrefs"
 Attribute VB_GlobalNameSpace = False
 Attribute VB_Creatable = False
 Attribute VB_PredeclaredId = True
 Attribute VB_Exposed = False
 
 '---------------------------------------------------------------------------------------
-' Module    : planetPrefs
+' Module    : halfpennyPrefs
 ' Author    : beededea
 ' Date      : 17/08/2022
 ' Purpose   : VB6 standard form to display the prefs
@@ -1733,7 +1733,7 @@ Private Sub chkShowTaskbar_Click()
 
 chkShowTaskbar_Click_Error:
 
-    MsgBox "Error " & Err.Number & " (" & Err.Description & ") in procedure chkShowTaskbar_Click of Form planetPrefs"
+    MsgBox "Error " & Err.Number & " (" & Err.Description & ") in procedure chkShowTaskbar_Click of Form halfpennyPrefs"
 End Sub
 
 
@@ -1791,7 +1791,7 @@ Private Sub Form_Load()
 
 Form_Load_Error:
 
-    MsgBox "Error " & Err.Number & " (" & Err.Description & ") in procedure Form_Load of Form planetPrefs"
+    MsgBox "Error " & Err.Number & " (" & Err.Description & ") in procedure Form_Load of Form halfpennyPrefs"
 
 End Sub
 
@@ -1819,7 +1819,7 @@ Private Sub btnAboutDebugInfo_Click()
 
 btnAboutDebugInfo_Click_Error:
 
-    MsgBox "Error " & Err.Number & " (" & Err.Description & ") in procedure btnAboutDebugInfo_Click of form planetPrefs"
+    MsgBox "Error " & Err.Number & " (" & Err.Description & ") in procedure btnAboutDebugInfo_Click of form halfpennyPrefs"
 End Sub
 
 '---------------------------------------------------------------------------------------
@@ -1839,7 +1839,7 @@ Private Sub btnDonate_Click()
 
 btnDonate_Click_Error:
 
-    MsgBox "Error " & Err.Number & " (" & Err.Description & ") in procedure btnDonate_Click of Form planetPrefs"
+    MsgBox "Error " & Err.Number & " (" & Err.Description & ") in procedure btnDonate_Click of Form halfpennyPrefs"
 End Sub
 
 '---------------------------------------------------------------------------------------
@@ -1861,7 +1861,7 @@ Private Sub btnFacebook_Click()
 
 btnFacebook_Click_Error:
 
-    MsgBox "Error " & Err.Number & " (" & Err.Description & ") in procedure btnFacebook_Click of Form planetPrefs"
+    MsgBox "Error " & Err.Number & " (" & Err.Description & ") in procedure btnFacebook_Click of Form halfpennyPrefs"
 End Sub
 
 '---------------------------------------------------------------------------------------
@@ -1905,7 +1905,7 @@ btnOpenFile_Click_Error:
 
     With Err
          If .Number <> 0 Then
-            MsgBox "Error " & Err.Number & " (" & Err.Description & ") in procedure btnOpenFile_Click of Form planetPrefs"
+            MsgBox "Error " & Err.Number & " (" & Err.Description & ") in procedure btnOpenFile_Click of Form halfpennyPrefs"
             Resume Next
           End If
     End With
@@ -1930,7 +1930,7 @@ Private Sub btnUpdate_Click()
 
 btnUpdate_Click_Error:
 
-    MsgBox "Error " & Err.Number & " (" & Err.Description & ") in procedure btnUpdate_Click of Form planetPrefs"
+    MsgBox "Error " & Err.Number & " (" & Err.Description & ") in procedure btnUpdate_Click of Form halfpennyPrefs"
 End Sub
 
 Private Sub chkGaugeFunctions_Click()
@@ -1985,7 +1985,7 @@ btnDefaultEditor_Click_Error:
 
     With Err
          If .Number <> 0 Then
-            MsgBox "Error " & Err.Number & " (" & Err.Description & ") in procedure btnDefaultEditor_Click of Form planetPrefs"
+            MsgBox "Error " & Err.Number & " (" & Err.Description & ") in procedure btnDefaultEditor_Click of Form halfpennyPrefs"
             Resume Next
           End If
     End With
@@ -2014,7 +2014,7 @@ Private Sub chkEnableBalloonTooltips_Click()
 
 chkEnableBalloonTooltips_Click_Error:
 
-    MsgBox "Error " & Err.Number & " (" & Err.Description & ") in procedure chkEnableBalloonTooltips_Click of Form planetPrefs"
+    MsgBox "Error " & Err.Number & " (" & Err.Description & ") in procedure chkEnableBalloonTooltips_Click of Form halfpennyPrefs"
 End Sub
 
 
@@ -2041,7 +2041,7 @@ Private Sub chkIgnoreMouse_Click()
 
 chkIgnoreMouse_Click_Error:
 
-    MsgBox "Error " & Err.Number & " (" & Err.Description & ") in procedure chkIgnoreMouse_Click of Form planetPrefs"
+    MsgBox "Error " & Err.Number & " (" & Err.Description & ") in procedure chkIgnoreMouse_Click of Form halfpennyPrefs"
 End Sub
 
 '---------------------------------------------------------------------------------------
@@ -2087,7 +2087,7 @@ chkPreventDragging_Click_Error:
 
     With Err
          If .Number <> 0 Then
-            MsgBox "Error " & Err.Number & " (" & Err.Description & ") in procedure chkPreventDragging_Click of Form planetPrefs"
+            MsgBox "Error " & Err.Number & " (" & Err.Description & ") in procedure chkPreventDragging_Click of Form halfpennyPrefs"
             Resume Next
           End If
     End With
@@ -2127,7 +2127,7 @@ Private Sub chkWidgetHidden_Click()
 
 chkWidgetHidden_Click_Error:
 
-    MsgBox "Error " & Err.Number & " (" & Err.Description & ") in procedure chkWidgetHidden_Click of Form planetPrefs"
+    MsgBox "Error " & Err.Number & " (" & Err.Description & ") in procedure chkWidgetHidden_Click of Form halfpennyPrefs"
 
 End Sub
 
@@ -2159,7 +2159,7 @@ Private Sub cmbAspectHidden_Click()
 
 cmbAspectHidden_Click_Error:
 
-    MsgBox "Error " & Err.Number & " (" & Err.Description & ") in procedure cmbAspectHidden_Click of Form planetPrefs"
+    MsgBox "Error " & Err.Number & " (" & Err.Description & ") in procedure cmbAspectHidden_Click of Form halfpennyPrefs"
 End Sub
 
 '---------------------------------------------------------------------------------------
@@ -2174,7 +2174,7 @@ Private Sub cmbDebug_Click()
 
     btnSave.Enabled = True ' enable the save button
     If cmbDebug.ListIndex = 0 Then
-        txtDefaultEditor.Text = "eg. E:\vb6\planet Widget VB6\planet Widget.vbp"
+        txtDefaultEditor.Text = "eg. E:\vb6\halfpenny Widget VB6\halfpenny Widget.vbp"
         txtDefaultEditor.Enabled = False
         lblDebug(7).Enabled = False
         btnDefaultEditor.Enabled = False
@@ -2194,7 +2194,7 @@ cmbDebug_Click_Error:
 
     With Err
          If .Number <> 0 Then
-            MsgBox "Error " & Err.Number & " (" & Err.Description & ") in procedure cmbDebug_Click of Form planetPrefs"
+            MsgBox "Error " & Err.Number & " (" & Err.Description & ") in procedure cmbDebug_Click of Form halfpennyPrefs"
             Resume Next
           End If
     End With
@@ -2228,7 +2228,7 @@ Private Sub cmbScrollWheelDirection_Click()
 
 cmbScrollWheelDirection_Click_Error:
 
-    MsgBox "Error " & Err.Number & " (" & Err.Description & ") in procedure cmbScrollWheelDirection_Click of Form planetPrefs"
+    MsgBox "Error " & Err.Number & " (" & Err.Description & ") in procedure cmbScrollWheelDirection_Click of Form halfpennyPrefs"
 End Sub
 
 Private Sub cmbWidgetLandscape_Click()
@@ -2276,7 +2276,7 @@ cmbWidgetPosition_Click_Error:
 
     With Err
          If .Number <> 0 Then
-            MsgBox "Error " & Err.Number & " (" & Err.Description & ") in procedure cmbWidgetPosition_Click of Form planetPrefs"
+            MsgBox "Error " & Err.Number & " (" & Err.Description & ") in procedure cmbWidgetPosition_Click of Form halfpennyPrefs"
             Resume Next
           End If
     End With
@@ -2313,7 +2313,7 @@ IsVisible_Error:
 
     With Err
          If .Number <> 0 Then
-            MsgBox "Error " & Err.Number & " (" & Err.Description & ") in procedure IsVisible of Form planetPrefs"
+            MsgBox "Error " & Err.Number & " (" & Err.Description & ") in procedure IsVisible of Form halfpennyPrefs"
             Resume Next
           End If
     End With
@@ -2345,7 +2345,7 @@ Private Sub showLastTab()
 
 showLastTab_Error:
 
-    MsgBox "Error " & Err.Number & " (" & Err.Description & ") in procedure showLastTab of Form planetPrefs"
+    MsgBox "Error " & Err.Number & " (" & Err.Description & ") in procedure showLastTab of Form halfpennyPrefs"
 
 End Sub
 
@@ -2391,7 +2391,7 @@ Private Sub positionPrefsFramesButtons()
     rightHandAlignment = fraAboutButton.Left + fraAboutButton.Width ' use final button rightmost as reference
     frameWidth = rightHandAlignment - frameLeft
     fraScrollbarCover.Left = rightHandAlignment - 690
-    planetPrefs.Width = rightHandAlignment + leftHandGutterWidth + 75 ' (not quite sure why we need the 75 twips padding)
+    halfpennyPrefs.Width = rightHandAlignment + leftHandGutterWidth + 75 ' (not quite sure why we need the 75 twips padding)
     
     ' align the top buttons
     fraGeneralButton.Top = buttonTop
@@ -2466,8 +2466,8 @@ Private Sub positionPrefsFramesButtons()
     
     ' set the height of the form itself
 '    If dynamicSizingFlg = False Then
-'        planetPrefs.Height = btnHelp.Top + btnHelp.Height + 600
-'        lastFormHeight = planetPrefs.Height
+'        halfpennyPrefs.Height = btnHelp.Top + btnHelp.Height + 600
+'        lastFormHeight = halfpennyPrefs.Height
 '    End If
 
    On Error GoTo 0
@@ -2475,7 +2475,7 @@ Private Sub positionPrefsFramesButtons()
 
 positionPrefsFramesButtons_Error:
 
-    MsgBox "Error " & Err.Number & " (" & Err.Description & ") in procedure positionPrefsFramesButtons of Form planetPrefs"
+    MsgBox "Error " & Err.Number & " (" & Err.Description & ") in procedure positionPrefsFramesButtons of Form halfpennyPrefs"
 
 End Sub
 
@@ -2492,7 +2492,7 @@ Private Sub btnCancel_Click()
    On Error GoTo btnCancel_Click_Error
 
     btnSave.Enabled = False ' disable the save button
-    planetPrefs.themeTimer.Enabled = False
+    halfpennyPrefs.themeTimer.Enabled = False
 
     Unload Me
 
@@ -2501,7 +2501,7 @@ Private Sub btnCancel_Click()
 
 btnCancel_Click_Error:
 
-    MsgBox "Error " & Err.Number & " (" & Err.Description & ") in procedure btnCancel_Click of Form planetPrefs"
+    MsgBox "Error " & Err.Number & " (" & Err.Description & ") in procedure btnCancel_Click of Form halfpennyPrefs"
 End Sub
 '
 '---------------------------------------------------------------------------------------
@@ -2518,7 +2518,7 @@ Private Sub btnHelp_Click()
         If fFExists(App.Path & "\help\Help.chm") Then
             Call ShellExecute(Me.hwnd, "Open", App.Path & "\help\Help.chm", vbNullString, App.Path, 1)
         Else
-            MsgBox ("%Err-I-ErrorNumber 11 - The help file - planet Help.html - is missing from the help folder.")
+            MsgBox ("%Err-I-ErrorNumber 11 - The help file - halfpenny Help.html - is missing from the help folder.")
         End If
 
    On Error GoTo 0
@@ -2526,7 +2526,7 @@ Private Sub btnHelp_Click()
 
 btnHelp_Click_Error:
 
-    MsgBox "Error " & Err.Number & " (" & Err.Description & ") in procedure btnHelp_Click of Form planetPrefs"
+    MsgBox "Error " & Err.Number & " (" & Err.Description & ") in procedure btnHelp_Click of Form halfpennyPrefs"
 End Sub
 '
 '---------------------------------------------------------------------------------------
@@ -2617,7 +2617,7 @@ Private Sub btnSave_Click()
         sPutINISetting softwareThingummy, "scrollWheelDirection", gblPlScrollWheelDirection, gblPlSettingsFile
                 
         sPutINISetting softwareThingummy, "gaugeFunctions", gblPlGaugeFunctions, gblPlSettingsFile
-        sPutINISetting softwareThingummy, "planetSelection", gblPlanetSelection, gblPlSettingsFile
+        sPutINISetting softwareThingummy, "halfpennySelection", gblHalfpennySelection, gblPlSettingsFile
         'sPutINISetting softwareThingummy, "widgetSkew", 'PrWidgetSkew, gblPlSettingsFile
         
         sPutINISetting softwareThingummy, "aspectHidden", gblPlAspectHidden, gblPlSettingsFile
@@ -2661,10 +2661,10 @@ Private Sub btnSave_Click()
     ' set the tooltips on the prefs screen
     Call setPrefsTooltips
 
-    ' sets the characteristics of the planet and menus immediately after saving
+    ' sets the characteristics of the halfpenny and menus immediately after saving
     Call adjustMainControls
     
-    planetPrefs.SetFocus
+    halfpennyPrefs.SetFocus
     btnSave.Enabled = False ' disable the save button showing it has successfully saved
     
    On Error GoTo 0
@@ -2672,7 +2672,7 @@ Private Sub btnSave_Click()
 
 btnSave_Click_Error:
 
-    MsgBox "Error " & Err.Number & " (" & Err.Description & ") in procedure btnSave_Click of Form planetPrefs"
+    MsgBox "Error " & Err.Number & " (" & Err.Description & ") in procedure btnSave_Click of Form halfpennyPrefs"
 
 End Sub
 
@@ -2719,7 +2719,7 @@ Private Sub btnPrefsFont_Click()
     fntItalics = CBool(gblPlPrefsFontItalics)
     fntColour = CLng(gblPlPrefsFontColour)
         
-    Call changeFont(planetPrefs, True, fntFont, fntSize, fntWeight, fntStyle, fntColour, fntItalics, fntUnderline, fntFontResult)
+    Call changeFont(halfpennyPrefs, True, fntFont, fntSize, fntWeight, fntStyle, fntColour, fntItalics, fntUnderline, fntFontResult)
     
     gblPlPrefsFont = CStr(fntFont)
     gblPlPrefsFontSize = CStr(fntSize)
@@ -2747,7 +2747,7 @@ Private Sub btnPrefsFont_Click()
 
 btnPrefsFont_Click_Error:
 
-    MsgBox "Error " & Err.Number & " (" & Err.Description & ") in procedure btnPrefsFont_Click of Form planetPrefs"
+    MsgBox "Error " & Err.Number & " (" & Err.Description & ") in procedure btnPrefsFont_Click of Form halfpennyPrefs"
 
 End Sub
 
@@ -2798,7 +2798,7 @@ Private Sub adjustPrefsControls()
     txtDefaultEditor.Text = gblPlDefaultEditor
     
     If gblPlPrefsFont <> vbNullString Then
-        Call changeFormFont(planetPrefs, gblPlPrefsFont, Val(gblPlPrefsFontSize), fntWeight, fntStyle, gblPlPrefsFontItalics, gblPlPrefsFontColour)
+        Call changeFormFont(halfpennyPrefs, gblPlPrefsFont, Val(gblPlPrefsFontSize), fntWeight, fntStyle, gblPlPrefsFontItalics, gblPlPrefsFontColour)
     End If
        
     ' fonts tab
@@ -2845,7 +2845,7 @@ Private Sub adjustPrefsControls()
 
 adjustPrefsControls_Error:
 
-    MsgBox "Error " & Err.Number & " (" & Err.Description & ") in procedure adjustPrefsControls of Form planetPrefs on line " & Erl
+    MsgBox "Error " & Err.Number & " (" & Err.Description & ") in procedure adjustPrefsControls of Form halfpennyPrefs on line " & Erl
 
 End Sub
 '
@@ -2923,7 +2923,7 @@ populatePrefsComboBoxes_Error:
 
     With Err
          If .Number <> 0 Then
-            MsgBox "Error " & Err.Number & " (" & Err.Description & ") in procedure populatePrefsComboBoxes of Form planetPrefs"
+            MsgBox "Error " & Err.Number & " (" & Err.Description & ") in procedure populatePrefsComboBoxes of Form halfpennyPrefs"
             Resume Next
           End If
     End With
@@ -2965,7 +2965,7 @@ Private Sub clearBorderStyle()
 
 clearBorderStyle_Error:
 
-    MsgBox "Error " & Err.Number & " (" & Err.Description & ") in procedure clearBorderStyle of Form planetPrefs"
+    MsgBox "Error " & Err.Number & " (" & Err.Description & ") in procedure clearBorderStyle of Form halfpennyPrefs"
 
 End Sub
 
@@ -3008,7 +3008,7 @@ Form_Resize_Error:
 
     With Err
          If .Number <> 0 Then
-            MsgBox "Error " & Err.Number & " (" & Err.Description & ") in procedure Form_Resize of Form planetPrefs"
+            MsgBox "Error " & Err.Number & " (" & Err.Description & ") in procedure Form_Resize of Form halfpennyPrefs"
             Resume Next
           End If
     End With
@@ -3035,7 +3035,7 @@ Private Sub Form_Unload(Cancel As Integer)
 
 Form_Unload_Error:
 
-    MsgBox "Error " & Err.Number & " (" & Err.Description & ") in procedure Form_Unload of Form planetPrefs"
+    MsgBox "Error " & Err.Number & " (" & Err.Description & ") in procedure Form_Unload of Form halfpennyPrefs"
 End Sub
 Private Sub Form_MouseMove(Button As Integer, Shift As Integer, X As Single, Y As Single)
     fraScrollbarCover.Visible = True
@@ -3057,7 +3057,7 @@ Private Sub fraConfigInner_MouseDown(Button As Integer, Shift As Integer, X As S
     End If
 End Sub
 Private Sub fraConfigInner_MouseMove(Button As Integer, Shift As Integer, X As Single, Y As Single)
-    If gblPlEnableTooltips = "1" Then CreateToolTip fraConfigInner.hwnd, "The configuration panel is the location for optional configuration items. These items change how planet operates, configure them to suit your needs and your mode of operation.", _
+    If gblPlEnableTooltips = "1" Then CreateToolTip fraConfigInner.hwnd, "The configuration panel is the location for optional configuration items. These items change how halfpenny operates, configure them to suit your needs and your mode of operation.", _
                   TTIconInfo, "Help on Configuration", , , , True
 
 End Sub
@@ -3067,7 +3067,7 @@ Private Sub fraConfig_MouseDown(Button As Integer, Shift As Integer, X As Single
     End If
 End Sub
 Private Sub fraConfig_MouseMove(Button As Integer, Shift As Integer, X As Single, Y As Single)
-    If gblPlEnableTooltips = "1" Then CreateToolTip fraConfig.hwnd, "The configuration panel is the location for optional configuration items. These items change how planet operates, configure them to suit your needs and your mode of operation.", _
+    If gblPlEnableTooltips = "1" Then CreateToolTip fraConfig.hwnd, "The configuration panel is the location for optional configuration items. These items change how halfpenny operates, configure them to suit your needs and your mode of operation.", _
                   TTIconInfo, "Help on Configuration", , , , True
 
 End Sub
@@ -3214,7 +3214,7 @@ Private Sub imgGeneral_Click()
 
 imgGeneral_Click_Error:
 
-     MsgBox "Error " & Err.Number & " (" & Err.Description & ") in procedure imgGeneral_Click of Form planetPrefs"
+     MsgBox "Error " & Err.Number & " (" & Err.Description & ") in procedure imgGeneral_Click of Form halfpennyPrefs"
 End Sub
 
 Private Sub imgGeneral_MouseUp(Button As Integer, Shift As Integer, X As Single, Y As Single)
@@ -3245,7 +3245,7 @@ Private Sub lblGitHub_dblClick()
 
 lblGitHub_dblClick_Error:
 
-     MsgBox "Error " & Err.Number & " (" & Err.Description & ") in procedure lblGitHub_dblClick of Form planetPrefs"
+     MsgBox "Error " & Err.Number & " (" & Err.Description & ") in procedure lblGitHub_dblClick of Form halfpennyPrefs"
 End Sub
 
 Private Sub lblGitHub_MouseMove(Button As Integer, Shift As Integer, X As Single, Y As Single)
@@ -3273,7 +3273,7 @@ Private Sub txtAboutText_MouseDown(Button As Integer, Shift As Integer, X As Sin
 
 txtAboutText_MouseDown_Error:
 
-     MsgBox "Error " & Err.Number & " (" & Err.Description & ") in procedure txtAboutText_MouseDown of Form planetPrefs"
+     MsgBox "Error " & Err.Number & " (" & Err.Description & ") in procedure txtAboutText_MouseDown of Form halfpennyPrefs"
 End Sub
 
 Private Sub txtAboutText_MouseMove(Button As Integer, Shift As Integer, X As Single, Y As Single)
@@ -3377,7 +3377,7 @@ Private Sub sliGaugeSize_Change()
 
 sliGaugeSize_Change_Error:
 
-     MsgBox "Error " & Err.Number & " (" & Err.Description & ") in procedure sliGaugeSize_Change of Form planetPrefs"
+     MsgBox "Error " & Err.Number & " (" & Err.Description & ") in procedure sliGaugeSize_Change of Form halfpennyPrefs"
 End Sub
 
 '---------------------------------------------------------------------------------------
@@ -3399,7 +3399,7 @@ Private Sub sliOpacity_Change()
 
 sliOpacity_Change_Error:
 
-     MsgBox "Error " & Err.Number & " (" & Err.Description & ") in procedure sliOpacity_Change of Form planetPrefs"
+     MsgBox "Error " & Err.Number & " (" & Err.Description & ") in procedure sliOpacity_Change of Form halfpennyPrefs"
 End Sub
 
 Private Sub sliOpacity_Click()
@@ -3526,7 +3526,7 @@ Public Sub setPrefsTooltips()
         imgFontsClicked.ToolTipText = "Opens the Fonts tab"
         imgGeneral.ToolTipText = "Opens the general tab"
         imgGeneralClicked.ToolTipText = "Opens the general tab"
-        lblPosition(6).ToolTipText = "Tablets only. Don't fiddle with this unless you really know what you are doing. Here you can choose whether this planet widget is hidden by default in either landscape or portrait mode or not at all. This option allows you to have certain widgets that do not obscure the screen in either landscape or portrait. If you accidentally set it so you can't find your widget on screen then change the setting here to NONE."
+        lblPosition(6).ToolTipText = "Tablets only. Don't fiddle with this unless you really know what you are doing. Here you can choose whether this halfpenny widget is hidden by default in either landscape or portrait mode or not at all. This option allows you to have certain widgets that do not obscure the screen in either landscape or portrait. If you accidentally set it so you can't find your widget on screen then change the setting here to NONE."
         chkGenStartup.ToolTipText = "Check this box to enable the automatic start of the program when Windows is started."
         chkGaugeFunctions.ToolTipText = "When checked this box enables any functionality. Any adjustment takes place instantly. "
         txtPortraitYoffset.ToolTipText = "Field to hold the vertical offset for the widget position in portrait mode."
@@ -3553,12 +3553,12 @@ Public Sub setPrefsTooltips()
         chkPreventDragging.ToolTipText = "Checking this box turns off the ability to drag the program with the mouse. The locking in position effect takes place instantly."
         chkIgnoreMouse.ToolTipText = "Checking this box causes the program to ignore all mouse events."
         sliOpacity.ToolTipText = "Set the transparency of the program. Any change in opacity takes place instantly."
-        cmbScrollWheelDirection.ToolTipText = "To change the direction of the mouse scroll wheel when resiziing the planet gauge."
+        cmbScrollWheelDirection.ToolTipText = "To change the direction of the mouse scroll wheel when resiziing the halfpenny gauge."
         chkEnableBalloonTooltips.ToolTipText = "Check the box to enable larger balloon tooltips for all controls on the main program"
         chkShowTaskbar.ToolTipText = "Check the box to show the widget in the taskbar"
         chkEnableTooltips.ToolTipText = "Check the box to enable tooltips for all controls on the main program"
-        sliGaugeSize.ToolTipText = "Adjust to a percentage of the original size. Any adjustment in size takes place instantly (you can also use Ctrl+Mousewheel hovering over the planet itself)."
-        'sliWidgetSkew.ToolTipText = "Adjust to a degree skew of the original position. Any adjustment in direction takes place instantly (you can also use the Mousewheel hovering over the planet itself."
+        sliGaugeSize.ToolTipText = "Adjust to a percentage of the original size. Any adjustment in size takes place instantly (you can also use Ctrl+Mousewheel hovering over the halfpenny itself)."
+        'sliWidgetSkew.ToolTipText = "Adjust to a degree skew of the original position. Any adjustment in direction takes place instantly (you can also use the Mousewheel hovering over the halfpenny itself."
         btnFacebook.ToolTipText = "This will link you to the our Steampunk/Dieselpunk program users Group."
         imgAbout.ToolTipText = "Opens the About tab"
         btnAboutDebugInfo.ToolTipText = "This gives access to the debugging tool"
@@ -3592,7 +3592,7 @@ Public Sub setPrefsTooltips()
         imgGeneralClicked.ToolTipText = vbNullString
         chkGenStartup.ToolTipText = vbNullString
         chkGaugeFunctions.ToolTipText = vbNullString
-        'cmbplanetSelection.ToolTipText = vbNullString
+        'cmbhalfpennySelection.ToolTipText = vbNullString
         txtPortraitYoffset.ToolTipText = vbNullString
         txtPortraitHoffset.ToolTipText = vbNullString
         txtLandscapeVoffset.ToolTipText = vbNullString
@@ -3641,7 +3641,7 @@ Public Sub setPrefsTooltips()
 
 setPrefsTooltips_Error:
 
-    MsgBox "Error " & Err.Number & " (" & Err.Description & ") in procedure setPrefsTooltips of Form planetPrefs"
+    MsgBox "Error " & Err.Number & " (" & Err.Description & ") in procedure setPrefsTooltips of Form halfpennyPrefs"
 
 End Sub
 '---------------------------------------------------------------------------------------
@@ -3663,7 +3663,7 @@ Public Sub DestroyToolTip()
 
 DestroyToolTip_Error:
 
-    MsgBox "Error " & Err.Number & " (" & Err.Description & ") in procedure DestroyToolTip of Form planetPrefs"
+    MsgBox "Error " & Err.Number & " (" & Err.Description & ") in procedure DestroyToolTip of Form halfpennyPrefs"
 End Sub
 '---------------------------------------------------------------------------------------
 ' Procedure : loadPrefsAboutText
@@ -3687,7 +3687,7 @@ Private Sub loadPrefsAboutText()
 
 loadPrefsAboutText_Error:
 
-    MsgBox "Error " & Err.Number & " (" & Err.Description & ") in procedure loadPrefsAboutText of Form planetPrefs"
+    MsgBox "Error " & Err.Number & " (" & Err.Description & ") in procedure loadPrefsAboutText of Form halfpennyPrefs"
     
 End Sub
 
@@ -3743,7 +3743,7 @@ Private Sub picButtonMouseUpEvent(ByVal thisTabName As String, ByRef thisPicName
         padding = 200 ' add normal padding below the help button to position the bottom of the form
 
         lastFormHeight = btnHelp.Top + btnHelp.Height + captionHeight + borderWidth + padding
-        planetPrefs.Height = lastFormHeight
+        halfpennyPrefs.Height = lastFormHeight
     End If
     
     If thisTabName = "about" Then
@@ -3759,7 +3759,7 @@ Private Sub picButtonMouseUpEvent(ByVal thisTabName As String, ByRef thisPicName
 
 picButtonMouseUpEvent_Error:
 
-    MsgBox "Error " & Err.Number & " (" & Err.Description & ") in procedure picButtonMouseUpEvent of Form planetPrefs"
+    MsgBox "Error " & Err.Number & " (" & Err.Description & ") in procedure picButtonMouseUpEvent of Form halfpennyPrefs"
 
 End Sub
 
@@ -3819,7 +3819,7 @@ End Sub
 '        frmCount = frmCount + 1
 '        If frmCount >= 500 Then
 '            frmCount = 0
-'            planetPrefs.Refresh
+'            halfpennyPrefs.Refresh
 '        End If
 '    Next useloop
 '
@@ -3828,7 +3828,7 @@ End Sub
 '
 'scrollFrameDownward_Error:
 '
-'    MsgBox "Error " & Err.Number & " (" & Err.Description & ") in procedure scrollFrameDownward of Form planetPrefs"
+'    MsgBox "Error " & Err.Number & " (" & Err.Description & ") in procedure scrollFrameDownward of Form halfpennyPrefs"
 '
 'End Sub
 
@@ -3857,7 +3857,7 @@ Private Sub themeTimer_Timer()
 
 themeTimer_Timer_Error:
 
-    MsgBox "Error " & Err.Number & " (" & Err.Description & ") in procedure themeTimer_Timer of Form planetPrefs"
+    MsgBox "Error " & Err.Number & " (" & Err.Description & ") in procedure themeTimer_Timer of Form halfpennyPrefs"
 
 End Sub
 
@@ -3878,7 +3878,7 @@ Private Sub mnuCoffee_Click()
     Exit Sub
 mnuCoffee_Click_Error:
 
-    MsgBox "Error " & Err.Number & " (" & Err.Description & ") in procedure mnuCoffee_Click of Form planetPrefs"
+    MsgBox "Error " & Err.Number & " (" & Err.Description & ") in procedure mnuCoffee_Click of Form halfpennyPrefs"
 End Sub
 
 
@@ -3902,7 +3902,7 @@ mnuLicenceA_Click_Error:
 
     With Err
          If .Number <> 0 Then
-            MsgBox "Error " & Err.Number & " (" & Err.Description & ") in procedure mnuLicenceA_Click of Form planetPrefs"
+            MsgBox "Error " & Err.Number & " (" & Err.Description & ") in procedure mnuLicenceA_Click of Form halfpennyPrefs"
             Resume Next
           End If
     End With
@@ -3929,7 +3929,7 @@ Private Sub mnuSupport_Click()
 
 mnuSupport_Click_Error:
 
-    MsgBox "Error " & Err.Number & " (" & Err.Description & ") in procedure mnuSupport_Click of Form planetPrefs"
+    MsgBox "Error " & Err.Number & " (" & Err.Description & ") in procedure mnuSupport_Click of Form halfpennyPrefs"
 End Sub
 
 
@@ -3951,18 +3951,18 @@ Private Sub mnuAuto_Click()
     
    On Error GoTo mnuAuto_Click_Error
 
-    If planetPrefs.themeTimer.Enabled = True Then
+    If halfpennyPrefs.themeTimer.Enabled = True Then
             MsgBox "Automatic Theme Selection is now Disabled"
-            planetPrefs.mnuAuto.Caption = "Auto Theme Disabled - Click to Enable"
-            planetPrefs.mnuAuto.Checked = False
+            halfpennyPrefs.mnuAuto.Caption = "Auto Theme Disabled - Click to Enable"
+            halfpennyPrefs.mnuAuto.Checked = False
             
-            planetPrefs.themeTimer.Enabled = False
+            halfpennyPrefs.themeTimer.Enabled = False
     Else
             MsgBox "Auto Theme Selection Enabled. If the o/s theme changes the utility should automatically skin the utility to suit the theme."
-            planetPrefs.mnuAuto.Caption = "Auto Theme Enabled - Click to Disable"
-            planetPrefs.mnuAuto.Checked = True
+            halfpennyPrefs.mnuAuto.Caption = "Auto Theme Enabled - Click to Disable"
+            halfpennyPrefs.mnuAuto.Checked = True
             
-            planetPrefs.themeTimer.Enabled = True
+            halfpennyPrefs.themeTimer.Enabled = True
             Call setThemeColour
     End If
 
@@ -3971,7 +3971,7 @@ Private Sub mnuAuto_Click()
 
 mnuAuto_Click_Error:
 
-    MsgBox "Error " & Err.Number & " (" & Err.Description & ") in procedure mnuAuto_Click of Form planetPrefs"
+    MsgBox "Error " & Err.Number & " (" & Err.Description & ") in procedure mnuAuto_Click of Form halfpennyPrefs"
 End Sub
 
 '---------------------------------------------------------------------------------------
@@ -3984,11 +3984,11 @@ End Sub
 Private Sub mnuDark_Click()
    On Error GoTo mnuDark_Click_Error
 
-    planetPrefs.mnuAuto.Caption = "Auto Theme Disabled - Click to Enable"
-    planetPrefs.mnuAuto.Checked = False
-    planetPrefs.mnuDark.Caption = "Dark Theme Enabled"
-    planetPrefs.mnuLight.Caption = "Light Theme Enable"
-    planetPrefs.themeTimer.Enabled = False
+    halfpennyPrefs.mnuAuto.Caption = "Auto Theme Disabled - Click to Enable"
+    halfpennyPrefs.mnuAuto.Checked = False
+    halfpennyPrefs.mnuDark.Caption = "Dark Theme Enabled"
+    halfpennyPrefs.mnuLight.Caption = "Light Theme Enable"
+    halfpennyPrefs.themeTimer.Enabled = False
     
     gblPlSkinTheme = "dark"
 
@@ -3999,7 +3999,7 @@ Private Sub mnuDark_Click()
 
 mnuDark_Click_Error:
 
-    MsgBox "Error " & Err.Number & " (" & Err.Description & ") in procedure mnuDark_Click of Form planetPrefs"
+    MsgBox "Error " & Err.Number & " (" & Err.Description & ") in procedure mnuDark_Click of Form halfpennyPrefs"
 End Sub
 
 '---------------------------------------------------------------------------------------
@@ -4013,11 +4013,11 @@ Private Sub mnuLight_Click()
     'MsgBox "Auto Theme Selection Manually Disabled"
    On Error GoTo mnuLight_Click_Error
     
-    planetPrefs.mnuAuto.Caption = "Auto Theme Disabled - Click to Enable"
-    planetPrefs.mnuAuto.Checked = False
-    planetPrefs.mnuDark.Caption = "Dark Theme Enable"
-    planetPrefs.mnuLight.Caption = "Light Theme Enabled"
-    planetPrefs.themeTimer.Enabled = False
+    halfpennyPrefs.mnuAuto.Caption = "Auto Theme Disabled - Click to Enable"
+    halfpennyPrefs.mnuAuto.Checked = False
+    halfpennyPrefs.mnuDark.Caption = "Dark Theme Enable"
+    halfpennyPrefs.mnuLight.Caption = "Light Theme Enabled"
+    halfpennyPrefs.themeTimer.Enabled = False
     
     gblPlSkinTheme = "light"
 
@@ -4028,7 +4028,7 @@ Private Sub mnuLight_Click()
 
 mnuLight_Click_Error:
 
-    MsgBox "Error " & Err.Number & " (" & Err.Description & ") in procedure mnuLight_Click of Form planetPrefs"
+    MsgBox "Error " & Err.Number & " (" & Err.Description & ") in procedure mnuLight_Click of Form halfpennyPrefs"
 End Sub
 
 
@@ -4050,10 +4050,10 @@ Private Sub setThemeShade(ByVal redC As Integer, ByVal greenC As Integer, ByVal 
 
     ' RGB(redC, greenC, blueC) is the background colour used by the lighter themes
     
-    planetPrefs.BackColor = RGB(redC, greenC, blueC)
+    halfpennyPrefs.BackColor = RGB(redC, greenC, blueC)
     
     ' all buttons must be set to graphical
-    For Each ctrl In planetPrefs.Controls
+    For Each ctrl In halfpennyPrefs.Controls
         If (TypeOf ctrl Is CommandButton) Or (TypeOf ctrl Is CheckBox) Or (TypeOf ctrl Is Label) Or (TypeOf ctrl Is OptionButton) Or (TypeOf ctrl Is Frame) Then
           ctrl.BackColor = RGB(redC, greenC, blueC)
         End If
@@ -4061,26 +4061,26 @@ Private Sub setThemeShade(ByVal redC As Integer, ByVal greenC As Integer, ByVal 
     
     If redC = 212 Then
         'classicTheme = True
-        planetPrefs.mnuLight.Checked = False
-        planetPrefs.mnuDark.Checked = True
+        halfpennyPrefs.mnuLight.Checked = False
+        halfpennyPrefs.mnuDark.Checked = True
         
         Call setIconImagesDark
         
     Else
         'classicTheme = False
-        planetPrefs.mnuLight.Checked = True
-        planetPrefs.mnuDark.Checked = False
+        halfpennyPrefs.mnuLight.Checked = True
+        halfpennyPrefs.mnuDark.Checked = False
         
         Call setIconImagesLight
                 
     End If
     
     'now change the color of the sliders.
-    'planetPrefs.sliplanetSelection.BackColor = RGB(redC, greenC, blueC)
-    'planetPrefs.'sliWidgetSkew.BackColor = RGB(redC, greenC, blueC)
-    planetPrefs.sliGaugeSize.BackColor = RGB(redC, greenC, blueC)
-    planetPrefs.sliOpacity.BackColor = RGB(redC, greenC, blueC)
-    planetPrefs.txtAboutText.BackColor = RGB(redC, greenC, blueC)
+    'halfpennyPrefs.slihalfpennySelection.BackColor = RGB(redC, greenC, blueC)
+    'halfpennyPrefs.'sliWidgetSkew.BackColor = RGB(redC, greenC, blueC)
+    halfpennyPrefs.sliGaugeSize.BackColor = RGB(redC, greenC, blueC)
+    halfpennyPrefs.sliOpacity.BackColor = RGB(redC, greenC, blueC)
+    halfpennyPrefs.txtAboutText.BackColor = RGB(redC, greenC, blueC)
     
     sPutINISetting softwareThingummy, "skinTheme", gblPlSkinTheme, gblPlSettingsFile ' now saved to the toolsettingsfile
 
@@ -4122,13 +4122,13 @@ Private Sub setThemeColour()
         SysClr = GetSysColor(COLOR_BTNFACE)
         gblPlSkinTheme = "dark"
         
-        planetPrefs.mnuDark.Caption = "Dark Theme Enabled"
-        planetPrefs.mnuLight.Caption = "Light Theme Enable"
+        halfpennyPrefs.mnuDark.Caption = "Dark Theme Enabled"
+        halfpennyPrefs.mnuLight.Caption = "Light Theme Enable"
 
     Else
         Call setModernThemeColours
-        planetPrefs.mnuDark.Caption = "Dark Theme Enable"
-        planetPrefs.mnuLight.Caption = "Light Theme Enabled"
+        halfpennyPrefs.mnuDark.Caption = "Dark Theme Enable"
+        halfpennyPrefs.mnuLight.Caption = "Light Theme Enabled"
     End If
 
     storeThemeColour = SysClr
@@ -4159,7 +4159,7 @@ Private Sub adjustPrefsTheme()
     Else
         If classicThemeCapable = True Then
             mnuAuto.Caption = "Auto Theme Enabled - Click to Disable"
-            planetPrefs.themeTimer.Enabled = True
+            halfpennyPrefs.themeTimer.Enabled = True
         Else
             gblPlSkinTheme = "light"
             Call setModernThemeColours
@@ -4171,7 +4171,7 @@ Private Sub adjustPrefsTheme()
 
 adjustPrefsTheme_Error:
 
-    MsgBox "Error " & Err.Number & " (" & Err.Description & ") in procedure adjustPrefsTheme of Form planetPrefs"
+    MsgBox "Error " & Err.Number & " (" & Err.Description & ") in procedure adjustPrefsTheme of Form halfpennyPrefs"
     
 End Sub
 
@@ -4188,7 +4188,7 @@ Private Sub setModernThemeColours()
     
     On Error GoTo setModernThemeColours_Error
     
-    'planetPrefs.mnuAuto.Caption = "Auto Theme Selection Cannot be Enabled"
+    'halfpennyPrefs.mnuAuto.Caption = "Auto Theme Selection Cannot be Enabled"
 
     'MsgBox "Windows Alternate Theme detected"
     SysClr = GetSysColor(COLOR_BTNFACE)
@@ -4361,7 +4361,7 @@ Private Sub loadHigherResImages()
         topIconWidth = 1010
     End If
     
-    If planetPrefs.mnuDark.Checked = True Then
+    If halfpennyPrefs.mnuDark.Checked = True Then
         Call setIconImagesDark
     Else
         Call setIconImagesLight
@@ -4372,7 +4372,7 @@ Private Sub loadHigherResImages()
 
 loadHigherResImages_Error:
 
-    MsgBox "Error " & Err.Number & " (" & Err.Description & ") in procedure loadHigherResImages of Form planetPrefs"
+    MsgBox "Error " & Err.Number & " (" & Err.Description & ") in procedure loadHigherResImages of Form halfpennyPrefs"
 End Sub
 '---------------------------------------------------------------------------------------
 ' Procedure : positionTimer_Timer
@@ -4392,7 +4392,7 @@ Private Sub positionTimer_Timer()
 
 positionTimer_Timer_Error:
 
-    MsgBox "Error " & Err.Number & " (" & Err.Description & ") in procedure positionTimer_Timer of Form planetPrefs"
+    MsgBox "Error " & Err.Number & " (" & Err.Description & ") in procedure positionTimer_Timer of Form halfpennyPrefs"
 End Sub
 
 
@@ -4417,8 +4417,8 @@ Private Sub chkEnableResizing_Click()
         dynamicSizingFlg = False
         txtPrefsFontCurrentSize.Visible = False
         lblCurrentFontsTab.Visible = False
-        Unload planetPrefs
-        planetPrefs.show
+        Unload halfpennyPrefs
+        halfpennyPrefs.show
         Call readPrefsPosition
         chkEnableResizing.Caption = "Enable Corner Resizing"
     End If
@@ -4430,7 +4430,7 @@ Private Sub chkEnableResizing_Click()
 
 chkEnableResizing_Click_Error:
 
-    MsgBox "Error " & Err.Number & " (" & Err.Description & ") in procedure chkEnableResizing_Click of Form planetPrefs"
+    MsgBox "Error " & Err.Number & " (" & Err.Description & ") in procedure chkEnableResizing_Click of Form halfpennyPrefs"
 
 End Sub
 
@@ -4486,7 +4486,7 @@ Private Sub setframeHeights()
 
 setframeHeights_Error:
 
-    MsgBox "Error " & Err.Number & " (" & Err.Description & ") in procedure setframeHeights of Form planetPrefs"
+    MsgBox "Error " & Err.Number & " (" & Err.Description & ") in procedure setframeHeights of Form halfpennyPrefs"
 End Sub
 
 
@@ -4506,31 +4506,31 @@ Private Sub setIconImagesDark()
     
     resourcePath = App.Path & "\resources\images"
 
-    If fFExists(resourcePath & "\config-icon-dark-" & topIconWidth & ".jpg") Then planetPrefs.imgConfig.Picture = LoadPicture(resourcePath & "\config-icon-dark-" & topIconWidth & ".jpg")
-    If fFExists(resourcePath & "\general-icon-dark-" & topIconWidth & ".jpg") Then planetPrefs.imgGeneral.Picture = LoadPicture(resourcePath & "\general-icon-dark-" & topIconWidth & ".jpg")
-    If fFExists(resourcePath & "\position-icon-dark-" & topIconWidth & ".jpg") Then planetPrefs.imgPosition.Picture = LoadPicture(resourcePath & "\position-icon-dark-" & topIconWidth & ".jpg")
-    If fFExists(resourcePath & "\font-icon-dark-" & topIconWidth & ".jpg") Then planetPrefs.imgFonts.Picture = LoadPicture(resourcePath & "\font-icon-dark-" & topIconWidth & ".jpg")
-    If fFExists(resourcePath & "\development-icon-dark-" & topIconWidth & ".jpg") Then planetPrefs.imgDevelopment.Picture = LoadPicture(resourcePath & "\development-icon-dark-" & topIconWidth & ".jpg")
-    If fFExists(resourcePath & "\sounds-icon-dark-" & topIconWidth & ".jpg") Then planetPrefs.imgSounds.Picture = LoadPicture(resourcePath & "\sounds-icon-dark-" & topIconWidth & ".jpg")
-    If fFExists(resourcePath & "\windows-icon-dark-" & topIconWidth & ".jpg") Then planetPrefs.imgWindow.Picture = LoadPicture(resourcePath & "\windows-icon-dark-" & topIconWidth & ".jpg")
-    If fFExists(resourcePath & "\about-icon-dark-" & topIconWidth & ".jpg") Then planetPrefs.imgAbout.Picture = LoadPicture(resourcePath & "\about-icon-dark-" & topIconWidth & ".jpg")
+    If fFExists(resourcePath & "\config-icon-dark-" & topIconWidth & ".jpg") Then halfpennyPrefs.imgConfig.Picture = LoadPicture(resourcePath & "\config-icon-dark-" & topIconWidth & ".jpg")
+    If fFExists(resourcePath & "\general-icon-dark-" & topIconWidth & ".jpg") Then halfpennyPrefs.imgGeneral.Picture = LoadPicture(resourcePath & "\general-icon-dark-" & topIconWidth & ".jpg")
+    If fFExists(resourcePath & "\position-icon-dark-" & topIconWidth & ".jpg") Then halfpennyPrefs.imgPosition.Picture = LoadPicture(resourcePath & "\position-icon-dark-" & topIconWidth & ".jpg")
+    If fFExists(resourcePath & "\font-icon-dark-" & topIconWidth & ".jpg") Then halfpennyPrefs.imgFonts.Picture = LoadPicture(resourcePath & "\font-icon-dark-" & topIconWidth & ".jpg")
+    If fFExists(resourcePath & "\development-icon-dark-" & topIconWidth & ".jpg") Then halfpennyPrefs.imgDevelopment.Picture = LoadPicture(resourcePath & "\development-icon-dark-" & topIconWidth & ".jpg")
+    If fFExists(resourcePath & "\sounds-icon-dark-" & topIconWidth & ".jpg") Then halfpennyPrefs.imgSounds.Picture = LoadPicture(resourcePath & "\sounds-icon-dark-" & topIconWidth & ".jpg")
+    If fFExists(resourcePath & "\windows-icon-dark-" & topIconWidth & ".jpg") Then halfpennyPrefs.imgWindow.Picture = LoadPicture(resourcePath & "\windows-icon-dark-" & topIconWidth & ".jpg")
+    If fFExists(resourcePath & "\about-icon-dark-" & topIconWidth & ".jpg") Then halfpennyPrefs.imgAbout.Picture = LoadPicture(resourcePath & "\about-icon-dark-" & topIconWidth & ".jpg")
     
     ' I may yet create clicked versions of all the icons but not now!
-    If fFExists(resourcePath & "\config-icon-dark-600-clicked.jpg") Then planetPrefs.imgConfigClicked.Picture = LoadPicture(resourcePath & "\config-icon-dark-600-clicked.jpg")
-    If fFExists(resourcePath & "\general-icon-dark-600-clicked.jpg") Then planetPrefs.imgGeneralClicked.Picture = LoadPicture(resourcePath & "\general-icon-dark-600-clicked.jpg")
-    If fFExists(resourcePath & "\position-icon-dark-600-clicked.jpg") Then planetPrefs.imgPositionClicked.Picture = LoadPicture(resourcePath & "\position-icon-dark-600-clicked.jpg")
-    If fFExists(resourcePath & "\font-icon-dark-600-clicked.jpg") Then planetPrefs.imgFontsClicked.Picture = LoadPicture(resourcePath & "\font-icon-dark-600-clicked.jpg")
-    If fFExists(resourcePath & "\development-icon-dark-600-clicked.jpg") Then planetPrefs.imgDevelopmentClicked.Picture = LoadPicture(resourcePath & "\development-icon-dark-600-clicked.jpg")
-    If fFExists(resourcePath & "\sounds-icon-dark-600-clicked.jpg") Then planetPrefs.imgSoundsClicked.Picture = LoadPicture(resourcePath & "\sounds-icon-dark-600-clicked.jpg")
-    If fFExists(resourcePath & "\windows-icon-dark-600-clicked.jpg") Then planetPrefs.imgWindowClicked.Picture = LoadPicture(resourcePath & "\windows-icon-dark-600-clicked.jpg")
-    If fFExists(resourcePath & "\about-icon-dark-600-clicked.jpg") Then planetPrefs.imgAboutClicked.Picture = LoadPicture(resourcePath & "\about-icon-dark-600-clicked.jpg")
+    If fFExists(resourcePath & "\config-icon-dark-600-clicked.jpg") Then halfpennyPrefs.imgConfigClicked.Picture = LoadPicture(resourcePath & "\config-icon-dark-600-clicked.jpg")
+    If fFExists(resourcePath & "\general-icon-dark-600-clicked.jpg") Then halfpennyPrefs.imgGeneralClicked.Picture = LoadPicture(resourcePath & "\general-icon-dark-600-clicked.jpg")
+    If fFExists(resourcePath & "\position-icon-dark-600-clicked.jpg") Then halfpennyPrefs.imgPositionClicked.Picture = LoadPicture(resourcePath & "\position-icon-dark-600-clicked.jpg")
+    If fFExists(resourcePath & "\font-icon-dark-600-clicked.jpg") Then halfpennyPrefs.imgFontsClicked.Picture = LoadPicture(resourcePath & "\font-icon-dark-600-clicked.jpg")
+    If fFExists(resourcePath & "\development-icon-dark-600-clicked.jpg") Then halfpennyPrefs.imgDevelopmentClicked.Picture = LoadPicture(resourcePath & "\development-icon-dark-600-clicked.jpg")
+    If fFExists(resourcePath & "\sounds-icon-dark-600-clicked.jpg") Then halfpennyPrefs.imgSoundsClicked.Picture = LoadPicture(resourcePath & "\sounds-icon-dark-600-clicked.jpg")
+    If fFExists(resourcePath & "\windows-icon-dark-600-clicked.jpg") Then halfpennyPrefs.imgWindowClicked.Picture = LoadPicture(resourcePath & "\windows-icon-dark-600-clicked.jpg")
+    If fFExists(resourcePath & "\about-icon-dark-600-clicked.jpg") Then halfpennyPrefs.imgAboutClicked.Picture = LoadPicture(resourcePath & "\about-icon-dark-600-clicked.jpg")
 
    On Error GoTo 0
    Exit Sub
 
 setIconImagesDark_Error:
 
-    MsgBox "Error " & Err.Number & " (" & Err.Description & ") in procedure setIconImagesDark of Form planetPrefs"
+    MsgBox "Error " & Err.Number & " (" & Err.Description & ") in procedure setIconImagesDark of Form halfpennyPrefs"
 
 End Sub
 
@@ -4550,31 +4550,31 @@ Private Sub setIconImagesLight()
     
     resourcePath = App.Path & "\resources\images"
     
-    If fFExists(resourcePath & "\config-icon-light-" & topIconWidth & ".jpg") Then planetPrefs.imgConfig.Picture = LoadPicture(resourcePath & "\config-icon-light-" & topIconWidth & ".jpg")
-    If fFExists(resourcePath & "\general-icon-light-" & topIconWidth & ".jpg") Then planetPrefs.imgGeneral.Picture = LoadPicture(resourcePath & "\general-icon-light-" & topIconWidth & ".jpg")
-    If fFExists(resourcePath & "\position-icon-light-" & topIconWidth & ".jpg") Then planetPrefs.imgPosition.Picture = LoadPicture(resourcePath & "\position-icon-light-" & topIconWidth & ".jpg")
-    If fFExists(resourcePath & "\font-icon-light-" & topIconWidth & ".jpg") Then planetPrefs.imgFonts.Picture = LoadPicture(resourcePath & "\font-icon-light-" & topIconWidth & ".jpg")
-    If fFExists(resourcePath & "\development-icon-light-" & topIconWidth & ".jpg") Then planetPrefs.imgDevelopment.Picture = LoadPicture(resourcePath & "\development-icon-light-" & topIconWidth & ".jpg")
-    If fFExists(resourcePath & "\sounds-icon-light-" & topIconWidth & ".jpg") Then planetPrefs.imgSounds.Picture = LoadPicture(resourcePath & "\sounds-icon-light-" & topIconWidth & ".jpg")
-    If fFExists(resourcePath & "\windows-icon-light-" & topIconWidth & ".jpg") Then planetPrefs.imgWindow.Picture = LoadPicture(resourcePath & "\windows-icon-light-" & topIconWidth & ".jpg")
-    If fFExists(resourcePath & "\about-icon-light-" & topIconWidth & ".jpg") Then planetPrefs.imgAbout.Picture = LoadPicture(resourcePath & "\about-icon-light-" & topIconWidth & ".jpg")
+    If fFExists(resourcePath & "\config-icon-light-" & topIconWidth & ".jpg") Then halfpennyPrefs.imgConfig.Picture = LoadPicture(resourcePath & "\config-icon-light-" & topIconWidth & ".jpg")
+    If fFExists(resourcePath & "\general-icon-light-" & topIconWidth & ".jpg") Then halfpennyPrefs.imgGeneral.Picture = LoadPicture(resourcePath & "\general-icon-light-" & topIconWidth & ".jpg")
+    If fFExists(resourcePath & "\position-icon-light-" & topIconWidth & ".jpg") Then halfpennyPrefs.imgPosition.Picture = LoadPicture(resourcePath & "\position-icon-light-" & topIconWidth & ".jpg")
+    If fFExists(resourcePath & "\font-icon-light-" & topIconWidth & ".jpg") Then halfpennyPrefs.imgFonts.Picture = LoadPicture(resourcePath & "\font-icon-light-" & topIconWidth & ".jpg")
+    If fFExists(resourcePath & "\development-icon-light-" & topIconWidth & ".jpg") Then halfpennyPrefs.imgDevelopment.Picture = LoadPicture(resourcePath & "\development-icon-light-" & topIconWidth & ".jpg")
+    If fFExists(resourcePath & "\sounds-icon-light-" & topIconWidth & ".jpg") Then halfpennyPrefs.imgSounds.Picture = LoadPicture(resourcePath & "\sounds-icon-light-" & topIconWidth & ".jpg")
+    If fFExists(resourcePath & "\windows-icon-light-" & topIconWidth & ".jpg") Then halfpennyPrefs.imgWindow.Picture = LoadPicture(resourcePath & "\windows-icon-light-" & topIconWidth & ".jpg")
+    If fFExists(resourcePath & "\about-icon-light-" & topIconWidth & ".jpg") Then halfpennyPrefs.imgAbout.Picture = LoadPicture(resourcePath & "\about-icon-light-" & topIconWidth & ".jpg")
     
     ' I may yet create clicked versions of all the icons but not now!
-    If fFExists(resourcePath & "\config-icon-light-600-clicked.jpg") Then planetPrefs.imgConfigClicked.Picture = LoadPicture(resourcePath & "\config-icon-light-600-clicked.jpg")
-    If fFExists(resourcePath & "\general-icon-light-600-clicked.jpg") Then planetPrefs.imgGeneralClicked.Picture = LoadPicture(resourcePath & "\general-icon-light-600-clicked.jpg")
-    If fFExists(resourcePath & "\position-icon-light-600-clicked.jpg") Then planetPrefs.imgPositionClicked.Picture = LoadPicture(resourcePath & "\position-icon-light-600-clicked.jpg")
-    If fFExists(resourcePath & "\font-icon-light-600-clicked.jpg") Then planetPrefs.imgFontsClicked.Picture = LoadPicture(resourcePath & "\font-icon-light-600-clicked.jpg")
-    If fFExists(resourcePath & "\development-icon-light-600-clicked.jpg") Then planetPrefs.imgDevelopmentClicked.Picture = LoadPicture(resourcePath & "\development-icon-light-600-clicked.jpg")
-    If fFExists(resourcePath & "\sounds-icon-light-600-clicked.jpg") Then planetPrefs.imgSoundsClicked.Picture = LoadPicture(resourcePath & "\sounds-icon-light-600-clicked.jpg")
-    If fFExists(resourcePath & "\windows-icon-light-600-clicked.jpg") Then planetPrefs.imgWindowClicked.Picture = LoadPicture(resourcePath & "\windows-icon-light-600-clicked.jpg")
-    If fFExists(resourcePath & "\about-icon-light-600-clicked.jpg") Then planetPrefs.imgAboutClicked.Picture = LoadPicture(resourcePath & "\about-icon-light-600-clicked.jpg")
+    If fFExists(resourcePath & "\config-icon-light-600-clicked.jpg") Then halfpennyPrefs.imgConfigClicked.Picture = LoadPicture(resourcePath & "\config-icon-light-600-clicked.jpg")
+    If fFExists(resourcePath & "\general-icon-light-600-clicked.jpg") Then halfpennyPrefs.imgGeneralClicked.Picture = LoadPicture(resourcePath & "\general-icon-light-600-clicked.jpg")
+    If fFExists(resourcePath & "\position-icon-light-600-clicked.jpg") Then halfpennyPrefs.imgPositionClicked.Picture = LoadPicture(resourcePath & "\position-icon-light-600-clicked.jpg")
+    If fFExists(resourcePath & "\font-icon-light-600-clicked.jpg") Then halfpennyPrefs.imgFontsClicked.Picture = LoadPicture(resourcePath & "\font-icon-light-600-clicked.jpg")
+    If fFExists(resourcePath & "\development-icon-light-600-clicked.jpg") Then halfpennyPrefs.imgDevelopmentClicked.Picture = LoadPicture(resourcePath & "\development-icon-light-600-clicked.jpg")
+    If fFExists(resourcePath & "\sounds-icon-light-600-clicked.jpg") Then halfpennyPrefs.imgSoundsClicked.Picture = LoadPicture(resourcePath & "\sounds-icon-light-600-clicked.jpg")
+    If fFExists(resourcePath & "\windows-icon-light-600-clicked.jpg") Then halfpennyPrefs.imgWindowClicked.Picture = LoadPicture(resourcePath & "\windows-icon-light-600-clicked.jpg")
+    If fFExists(resourcePath & "\about-icon-light-600-clicked.jpg") Then halfpennyPrefs.imgAboutClicked.Picture = LoadPicture(resourcePath & "\about-icon-light-600-clicked.jpg")
 
    On Error GoTo 0
    Exit Sub
 
 setIconImagesLight_Error:
 
-    MsgBox "Error " & Err.Number & " (" & Err.Description & ") in procedure setIconImagesLight of Form planetPrefs"
+    MsgBox "Error " & Err.Number & " (" & Err.Description & ") in procedure setIconImagesLight of Form halfpennyPrefs"
 
 End Sub
 
