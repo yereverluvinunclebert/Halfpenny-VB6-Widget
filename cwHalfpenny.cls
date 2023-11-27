@@ -6,13 +6,13 @@ BEGIN
   DataSourceBehavior  = 0  'vbNone
   MTSTransactionMode  = 0  'NotAnMTSObject
 END
-Attribute VB_Name = "cwPlanet"
+Attribute VB_Name = "cwThingummy"
 Attribute VB_GlobalNameSpace = False
 Attribute VB_Creatable = True
 Attribute VB_PredeclaredId = False
 Attribute VB_Exposed = False
 '---------------------------------------------------------------------------------------
-' Module    : cwplanet
+' Module    : cwThingummy
 ' Author    : beededea
 ' Date      : 28/05/2023
 ' Purpose   :
@@ -80,7 +80,7 @@ Private Sub Class_Initialize()
 
 Class_Initialize_Error:
 
-    MsgBox "Error " & Err.Number & " (" & Err.Description & ") in procedure Class_Initialize of Class Module cwplanet"
+    MsgBox "Error " & Err.Number & " (" & Err.Description & ") in procedure Class_Initialize of Class Module cwThingummy"
 
 End Sub
 
@@ -104,7 +104,7 @@ initialiseVars_Error:
 
     With Err
          If .Number <> 0 Then
-            MsgBox "Error " & Err.Number & " (" & Err.Description & ") in procedure initialiseVars of Class Module cwplanet"
+            MsgBox "Error " & Err.Number & " (" & Err.Description & ") in procedure initialiseVars of Class Module cwThingummy"
             Resume Next
           End If
     End With
@@ -130,7 +130,7 @@ Public Property Get Zoom() As Double
 
 ZoomGet_Error:
 
-    MsgBox "Error " & Err.Number & " (" & Err.Description & ") in procedure Zoom of Class Module cwplanet"
+    MsgBox "Error " & Err.Number & " (" & Err.Description & ") in procedure Zoom of Class Module cwThingummy"
 End Property
 '---------------------------------------------------------------------------------------
 ' Procedure : Zoom
@@ -151,7 +151,7 @@ Public Property Let Zoom(ByVal newValue As Double)
 
 ZoomLet_Error:
 
-    MsgBox "Error " & Err.Number & " (" & Err.Description & ") in procedure Zoom of Class Module cwplanet"
+    MsgBox "Error " & Err.Number & " (" & Err.Description & ") in procedure Zoom of Class Module cwThingummy"
 End Property
 '---------------------------------------------------------------------------------------
 ' Procedure : ZoomDirection
@@ -170,7 +170,7 @@ Public Property Get ZoomDirection() As String
 
 ZoomDirectionGet_Error:
 
-    MsgBox "Error " & Err.Number & " (" & Err.Description & ") in procedure ZoomDirection of Class Module cwplanet"
+    MsgBox "Error " & Err.Number & " (" & Err.Description & ") in procedure ZoomDirection of Class Module cwThingummy"
 End Property
 '---------------------------------------------------------------------------------------
 ' Procedure : ZoomDirection
@@ -190,7 +190,7 @@ Public Property Let ZoomDirection(ByVal newValue As String)
 
 ZoomDirectionLet_Error:
 
-    MsgBox "Error " & Err.Number & " (" & Err.Description & ") in procedure ZoomDirection of Class Module cwplanet"
+    MsgBox "Error " & Err.Number & " (" & Err.Description & ") in procedure ZoomDirection of Class Module cwThingummy"
 End Property
 '---------------------------------------------------------------------------------------
 ' Procedure : opacity
@@ -209,7 +209,7 @@ Public Property Let opacity(ByVal newValue As Double)
 
 opacityLet_Error:
 
-    MsgBox "Error " & Err.Number & " (" & Err.Description & ") in procedure opacity of Class Module cwplanet"
+    MsgBox "Error " & Err.Number & " (" & Err.Description & ") in procedure opacity of Class Module cwThingummy"
 End Property
 '---------------------------------------------------------------------------------------
 ' Procedure : opacity
@@ -228,7 +228,7 @@ Public Property Get opacity() As Double
 
 opacityGet_Error:
 
-    MsgBox "Error " & Err.Number & " (" & Err.Description & ") in procedure opacity of Class Module cwplanet"
+    MsgBox "Error " & Err.Number & " (" & Err.Description & ") in procedure opacity of Class Module cwThingummy"
 End Property
 
 '---------------------------------------------------------------------------------------
@@ -248,7 +248,7 @@ Public Property Get Locked() As Boolean
 
 LockedGet_Error:
 
-    MsgBox "Error " & Err.Number & " (" & Err.Description & ") in procedure Locked of Class Module cwplanet"
+    MsgBox "Error " & Err.Number & " (" & Err.Description & ") in procedure Locked of Class Module cwThingummy"
 End Property
 '---------------------------------------------------------------------------------------
 ' Procedure : Locked
@@ -267,7 +267,7 @@ Public Property Let Locked(ByVal newValue As Boolean)
 
 LockedLet_Error:
 
-    MsgBox "Error " & Err.Number & " (" & Err.Description & ") in procedure Locked of Class Module cwplanet"
+    MsgBox "Error " & Err.Number & " (" & Err.Description & ") in procedure Locked of Class Module cwThingummy"
 End Property
 '---------------------------------------------------------------------------------------
 ' Procedure : Hidden
@@ -286,7 +286,7 @@ Public Property Get Hidden() As Boolean
 
 HiddenGet_Error:
 
-    MsgBox "Error " & Err.Number & " (" & Err.Description & ") in procedure Hidden of Class Module cwplanet"
+    MsgBox "Error " & Err.Number & " (" & Err.Description & ") in procedure Hidden of Class Module cwThingummy"
 End Property
 '---------------------------------------------------------------------------------------
 ' Procedure : Hidden
@@ -313,7 +313,7 @@ Public Property Let Hidden(ByVal newValue As Boolean)
 
 HiddenLet_Error:
 
-    MsgBox "Error " & Err.Number & " (" & Err.Description & ") in procedure Hidden of Class Module cwplanet"
+    MsgBox "Error " & Err.Number & " (" & Err.Description & ") in procedure Hidden of Class Module cwThingummy"
 End Property
 
 
@@ -337,8 +337,10 @@ Private Sub W_MouseWheel(ByVal MouseKeys As Long, ByVal Rotation As Long, ByVal 
         Else
             Zoom = Zoom + 0.02 * LineOffset
         End If
-        gblPlGaugeSize = LTrim$(Str$(planetWidget.Zoom * 100)) ' store the value dynamically
-        sPutINISetting softwarePlanet, "gaugeSize", gblPlGaugeSize, gblPlSettingsFile
+        gblPlGaugeSize = LTrim$(Str$(thingummyWidget.Zoom * 100)) ' store the value dynamically
+        sPutINISetting softwareThingummy, "gaugeSize", gblPlGaugeSize, gblPlSettingsFile
+        
+        If planetPrefs.IsVisible = True Then planetPrefs.sliGaugeSize = Val(gblPlGaugeSize)
     End Select
 
    On Error GoTo 0
@@ -346,7 +348,7 @@ Private Sub W_MouseWheel(ByVal MouseKeys As Long, ByVal Rotation As Long, ByVal 
 
 W_MouseWheel_Error:
 
-    MsgBox "Error " & Err.Number & " (" & Err.Description & ") in procedure W_MouseWheel of Class Module cwplanet"
+    MsgBox "Error " & Err.Number & " (" & Err.Description & ") in procedure W_MouseWheel of Class Module cwThingummy"
     
 End Sub
 '---------------------------------------------------------------------------------------
@@ -372,7 +374,7 @@ Private Sub W_MouseDown(Button As Integer, Shift As Integer, ByVal X As Single, 
 
 W_MouseDown_Error:
 
-    MsgBox "Error " & Err.Number & " (" & Err.Description & ") in procedure W_MouseDown of Class Module cwplanet"
+    MsgBox "Error " & Err.Number & " (" & Err.Description & ") in procedure W_MouseDown of Class Module cwThingummy"
 End Sub
 '---------------------------------------------------------------------------------------
 ' Procedure : W_Paint
@@ -391,7 +393,7 @@ Private Sub W_Paint(CC As vbRichClient5.cCairoContext, ByVal xAbs As Single, ByV
 
 W_Paint_Error:
 
-    MsgBox "Error " & Err.Number & " (" & Err.Description & ") in procedure W_Paint of Class Module cwplanet"
+    MsgBox "Error " & Err.Number & " (" & Err.Description & ") in procedure W_Paint of Class Module cwThingummy"
 End Sub
 
 
@@ -422,7 +424,7 @@ Public Sub Draw(ByVal CC As cCairoContext, ByVal dx_Aligned As Single, ByVal dy_
 
 Draw_Error:
 
-    MsgBox "Error " & Err.Number & " (" & Err.Description & ") in procedure Draw of Class Module cwplanet"
+    MsgBox "Error " & Err.Number & " (" & Err.Description & ") in procedure Draw of Class Module cwThingummy"
 
 End Sub
 

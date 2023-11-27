@@ -118,9 +118,9 @@ Private Sub declineLabel_Click()
 
     MsgBox "Please uninstall and remove Steamydock" & vbCr & "from your computer."
 
-    Call planetForm_Unload
+    Call thingummyForm_Unload
     
-    sPutINISetting softwarePlanet, "Licence", slicence, gblPlSettingsFile
+    sPutINISetting softwareThingummy, "Licence", slicence, gblPlSettingsFile
     End
 
    On Error GoTo 0
@@ -154,7 +154,7 @@ Private Sub Label2_Click()
     frmLicence.Hide
     slicence = "1"
     
-    sPutINISetting softwarePlanet, "Licence", slicence, gblPlSettingsFile
+    sPutINISetting softwareThingummy, "Licence", slicence, gblPlSettingsFile
 
    On Error GoTo 0
    Exit Sub

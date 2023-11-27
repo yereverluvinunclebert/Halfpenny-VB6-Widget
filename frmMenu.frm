@@ -314,12 +314,12 @@ End Sub
 Private Sub mnuHideWidget_Click()
     On Error GoTo mnuHideWidget_Click_Error
        
-    planetWidget.Hidden = True
+    thingummyWidget.Hidden = True
     
     frmTimer.revealWidgetTimer.Enabled = True
     gblPlWidgetHidden = "1"
     ' we have to save the value here
-    sPutINISetting softwarePlanet, "widgetHidden", gblPlWidgetHidden, gblPlSettingsFile
+    sPutINISetting softwareThingummy, "widgetHidden", gblPlWidgetHidden, gblPlSettingsFile
 
    On Error GoTo 0
    Exit Sub
@@ -349,16 +349,16 @@ Private Sub mnuLockWidget_Click()
     If gblPlPreventDragging = "1" Then
         mnuLockWidget.Checked = False
         gblPlPreventDragging = "0"
-        planetWidget.Locked = False
+        thingummyWidget.Locked = False
         planetPrefs.chkPreventDragging.Value = 0
     Else
         mnuLockWidget.Checked = True
-        planetWidget.Locked = 1
+        thingummyWidget.Locked = 1
         gblPlPreventDragging = "1"
         planetPrefs.chkPreventDragging.Value = 1
     End If
 
-    sPutINISetting softwarePlanet, "preventDragging", gblPlPreventDragging, gblPlSettingsFile
+    sPutINISetting softwareThingummy, "preventDragging", gblPlPreventDragging, gblPlSettingsFile
 
    On Error GoTo 0
    Exit Sub
@@ -406,7 +406,7 @@ Private Sub mnuQuit_Click()
 
     On Error GoTo mnuQuit_Click_Error
     
-    Call planetForm_Unload
+    Call thingummyForm_Unload
 
    On Error GoTo 0
    Exit Sub
@@ -579,12 +579,12 @@ End Sub
 Private Sub mnuSwitchOff_Click()
    On Error GoTo mnuSwitchOff_Click_Error
 
-    ' planetWidget.Rotating = False
+    ' thingummyWidget.Rotating = False
     mnuSwitchOff.Checked = True
     mnuTurnFunctionsOn.Checked = False
     
     gblPlGaugeFunctions = "0"
-    sPutINISetting softwarePlanet, "gaugeFunctions", gblPlGaugeFunctions, gblPlSettingsFile
+    sPutINISetting softwareThingummy, "gaugeFunctions", gblPlGaugeFunctions, gblPlSettingsFile
 
    On Error GoTo 0
    Exit Sub
@@ -611,12 +611,12 @@ Private Sub mnuTurnFunctionsOn_Click()
         PlaySound App.Path & "\resources\sounds\" & fileToPlay, ByVal 0&, SND_FILENAME Or SND_ASYNC
     End If
 
-    ' planetWidget.Rotating = True
+    ' thingummyWidget.Rotating = True
     mnuSwitchOff.Checked = False
     mnuTurnFunctionsOn.Checked = True
     
     gblPlGaugeFunctions = "1"
-    sPutINISetting softwarePlanet, "gaugeFunctions", gblPlGaugeFunctions, gblPlSettingsFile
+    sPutINISetting softwareThingummy, "gaugeFunctions", gblPlGaugeFunctions, gblPlSettingsFile
 
    On Error GoTo 0
    Exit Sub
