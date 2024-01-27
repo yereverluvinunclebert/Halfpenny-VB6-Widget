@@ -198,7 +198,7 @@ If you are just a casual user of desktop programs then simply download the SETUP
 	VisualBasic Runtime Objects and Procedures  
 	VisualBasic Objects and Procedures  
 	OLE Automation  
-	vbRichClient6  
+	vbRichClient5  
  
  
  LICENCE AGREEMENTS:
